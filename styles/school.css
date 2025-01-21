@@ -1,15 +1,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+/* font1 */
 .quicksand-font {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-/* body{
-    background-color: #faf8f8;
-} */
+/* font2 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    /* background-color: #faf8f8; */
+    
+}
 /* navbar style */
 header{
     max-width: 1440px;
@@ -67,16 +78,40 @@ header{
 .navbar i{
     display: none;
 }
-.fa-burger{
+.fa-bars{
     font-size: 30px;
     width: 30px;
 }
 /* shared style */
+/* main{
+    background-image: url(../assets/bg.png);
+} */
+
 .btn-primary{
     background-color: orange;
     padding: 10px 60px;
     border: none;
     border-radius: 12px;
+}
+.Curriculum-card{
+    width: 367px;
+    height: 476px;
+    text-align: center;
+    box-shadow: 0 1px 28px rgba(0, 0, 0, 0.06);
+    border-radius: 19px;
+}
+.Curriculum-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+}
+.Curriculum-description{
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+}
+.Curriculum-section a{
+    text-decoration: none;
+    font-weight: 700;
 }
 
 
@@ -85,6 +120,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 .banner-content{
     max-width: 660px;
@@ -120,6 +156,48 @@ header{
     max-width: 460px;
     max-height: 575px;
 }
+/* Curriculum  part styles */
+.Curriculum-section{
+    text-align: center;
+}
+.Curriculum-heading{
+    font-size: 2.87rem;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+.Curriculum-cards{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 80px;
+}
+.btn-kinder{
+    text-decoration: none;
+    color: #64C8FF;
+}
+.btn-elementary{
+    color: #F0AA00;
+}
+.btn-middle{
+    color: #8700FF;
+}
+.navigation{
+    color: #F0AA00;
+    text-align: center;
+    justify-content: center;
+    margin-top: 17px;
+}
+.fa-chevron-right, .fa-chevron-left{
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+    color: white;
+    /* text-align: center;
+    justify-content: center; */
+    border-radius: 30px;
+    
+}
+
 
 /* media query */ 
 @media screen and (max-width: 576px) {
@@ -153,12 +231,20 @@ header{
         width: 100%;
     }
     
-    .banner-img{
-        /* max-width: 100%;
-        max-height: 100%; */
+    .banner-img img{
         width: 100%;
         height: 100%;
 
+    }
+    .Curriculum-cards{
+        flex-direction: column;
+        width: 100%;
+    }
+    .Curriculum-card{
+        width: 100%;
+    }
+    .navigation{
+        display: none;
     }
 
 }
