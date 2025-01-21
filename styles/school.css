@@ -7,6 +7,9 @@
   font-weight: 400;
   font-style: normal;
 }
+/* body{
+    background-color: #faf8f8;
+} */
 /* navbar style */
 header{
     max-width: 1440px;
@@ -33,7 +36,7 @@ header{
     font-weight: 700;
 }
 .manu{
-    display: inline-block;
+    /* display: inline-block; */
     display: flex;
     gap: 32px;
 }
@@ -54,15 +57,109 @@ header{
 .manu a:nth-child(4){
     color: #5D58EF;
 }
-.btn-primary{
-    background-color: orange;
-    padding: 10px 45px;
-    border: none;
-    border-radius: 12px;
-}
 .btn-primary a{
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+.navbar i{
+    display: none;
+}
+.fa-burger{
+    font-size: 30px;
+    width: 30px;
+}
+/* shared style */
+.btn-primary{
+    background-color: orange;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+/* banner style */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-content{
+    max-width: 660px;
+}
+.banner-span-1{
+    color: orange;
+}
+.banner-span-2{
+    color: #01ACFD;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.banner-description{
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.banner-btn{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: black;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 12px;
+}
+.banner-img{
+    max-width: 460px;
+    max-height: 575px;
+}
+
+/* media query */ 
+@media screen and (max-width: 576px) {
+    .navbar i{
+        display: block;
+    }
+    .manu, .btn-primary, .school{
+        display: none;
+    }
+    header{
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .logo-div{
+        margin-bottom: 10px;
+    }
+    .navbar{
+        border-bottom: 1px solid orange;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+    .banner-content{
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .banner-img{
+        /* max-width: 100%;
+        max-height: 100%; */
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+    
