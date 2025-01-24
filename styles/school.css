@@ -245,6 +245,9 @@ header {
 }
 
 /* stories part style */
+.display-hide{
+    display: none;
+}
 
 main {
     background: linear-gradient(to bottom, #fff, #f5e2cb);
@@ -295,15 +298,10 @@ main {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
-}
-
-.story-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .image-container {
@@ -384,6 +382,62 @@ main {
     font-size: 20px;
     font-weight: 700;
 }
+/* footer style */
+.footer{
+    background-color: #01ACFD;
+    max-width: 1439px;
+    max-height: 519px;
+    padding: 80px;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.kids-head{
+    display: flex;
+    max-width: 300px;
+    max-height: 81px;
+    align-items: center;
+    
+}
+.kid-title{
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+}
+.kids-content{
+    align-items: center;
+}
+.footer-description{
+    max-width: 400px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 400;
+}
+.footer-kids-img{
+    max-width: 82px;
+    max-height: 82px;
+}
+.footer-about h3{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.footer-about a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.anchor{
+    line-height: 30px;
+}
+.footer-touch h3{
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
 
 /* media query */
 @media screen and (max-width: 576px) {
@@ -450,5 +504,16 @@ main {
     .navigation {
         display: none;
     }
-    
+    .footer{
+        max-width: 100%;
+        max-height: 100%;
+        padding: 15px;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
 }
