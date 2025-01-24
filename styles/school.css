@@ -245,9 +245,6 @@ header {
 }
 
 /* stories part style */
-.display-hide{
-    display: none;
-}
 
 main {
     background: linear-gradient(to bottom, #fff, #f5e2cb);
@@ -441,6 +438,9 @@ main {
 
 /* media query */
 @media screen and (max-width: 576px) {
+    body{
+        padding: 0 10px;
+    }
     .navbar i {
         display: block;
     }
@@ -454,8 +454,8 @@ main {
     header {
         max-width: 100%;
         width: 100%;
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .logo-div {
@@ -488,8 +488,8 @@ main {
     .Curriculum-cards {
         flex-direction: column;
         width: 100%;
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 0;
+        padding-right: 0;
         gap: auto;
     }
 
@@ -503,6 +503,23 @@ main {
 
     .navigation {
         display: none;
+    }
+
+    .left-side{
+        display: none;
+    }
+    .right-side{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .story_section{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    .date-badge{
+        top: 91px;
+        left: 10px;
     }
     .footer{
         max-width: 100%;
